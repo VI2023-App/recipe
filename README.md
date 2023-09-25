@@ -48,6 +48,8 @@ https://www.kaggle.com/datasets/kritikseth/fruit-and-vegetable-image-recognition
 <li>Anaconda</li>
 <li>Matplotlib</li>
 <li>Numpy</li>
+<li>React</li>
+<li>Flask</li>
 
 <h2>ビルドと立ち上げ</h2>
 
