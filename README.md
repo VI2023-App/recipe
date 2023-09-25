@@ -1,7 +1,8 @@
 # recipe
 
 <h2>データセット</h2>
-https://www.kaggle.com/datasets/kritikseth/fruit-and-vegetable-image-recognition
+https://www.kaggle.com/datasets/kritikseth/fruit-and-vegetable-image-recognition <br>
+上記リンクからダウンロード後，dataフォルダに展開する．
 
 <h2>対象となる野菜・果物</h2>
 <li>apple</li>
