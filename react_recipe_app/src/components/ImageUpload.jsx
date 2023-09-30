@@ -1,3 +1,4 @@
+/* 画像アップロード */
 import React, { useState } from 'react';
 
 function ImageUpload() {
@@ -34,7 +35,7 @@ function ImageUpload() {
         <div>
             <form onSubmit={handleSubmit}>
                 <input type="file" onChange={handleImageChange} />
-                <button type="submit">アップロード</button>
+                <button type="submit" className="bg-gray-300 border-0 p-2 rounded-md hover:bg-gray-400 hover:text-white">アップロード</button>
             </form>
         </div>
     );
