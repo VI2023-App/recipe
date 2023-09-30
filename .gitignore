@@ -1,3 +1,4 @@
 /ObjectDetection/data
 /flask_backend/static
 /flask_backend/templates
+/flask_backend/config
