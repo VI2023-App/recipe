@@ -4,6 +4,7 @@ import img_recipe from "../assets/img_recipe.png"
 
 const Home = () =>{
     const [selectedFile, setSelectedFile] = useState(null);
+    const [fileUrl, setFileUrl] = useState(img_recipe);
     const [textOfRecipe, setTextOfRecipe] = useState('');
 
     const getRecipe = (json) => {
@@ -12,8 +13,10 @@ const Home = () =>{
     };
 
     const handleImageChange = (e) => {
-        const file = e.target.files[0];
-        setSelectedFile(file);
+        const imageFile = e.target.files[0];
+        const imageURL = URL.createObjectURL(imageFile);
+        setSelectedFile(imageFile);
+        setFileUrl(imageURL);
     };
 
     const handleUpload = async (e) => {
@@ -46,7 +49,9 @@ const Home = () =>{
                 <div className="grid md:grid-cols-2 place-items-center gap-8">
                     <div className="w-[300px] h-[300px] sm:w-[350px] sm:h-[350px] 
                         rounded-3xl overflow-hidden shadow-iconShadow border-[10px] border-solid border-mistyrose">
-                            <img src={img_recipe} alt="img_recipe" className="w-full h-full object-cover" />
+                            <img src={fileUrl} alt="img_recipe"
+                                onChange={e => setFileUrl(e.target.value)}
+                                className="w-full h-full object-cover" />
                     </div>
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
