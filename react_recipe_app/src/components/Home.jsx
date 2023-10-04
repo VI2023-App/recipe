@@ -69,8 +69,8 @@ const Home = () =>{
                     </motion.div>
                 </div>
             </div>
-            <div className='Result'>
-                <h2>処理結果</h2>
+            <div id="result">
+                <div className="text-black sm:text-[1.5rem] font-bond mb-4">処理結果</div>
                 <textarea name="reply" class="h-48 w-full p-2 border" 
                     placeholder='Loading...' value={textOfRecipe} onChange={e => setTextOfRecipe(e.target.value)} />
             </div>
