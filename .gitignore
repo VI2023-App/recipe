@@ -1,4 +1,8 @@
 /ObjectDetection/data
 /flask_backend/static
 /flask_backend/templates
-/flask_backend/config
+/flask_backend/settings.py
+/test_image
+flask_backend/yolov8n.pt
+flask_backend/__pycache__
+.vscode/launch.json

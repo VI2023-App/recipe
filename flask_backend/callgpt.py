@@ -1,5 +1,5 @@
 import json
-import config.settings as settings
+import settings
 import openai
 
 openai.api_key = settings.api_key
