@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { PiCookingPotFill } from "react-icons/pi"
 
 const Header = () =>{
     const [toggle, setToggle] = useState(false);
@@ -9,13 +10,11 @@ const Header = () =>{
         });
     }, []);
     return(
-        <div className={`${isTop ? "shadow-xl bg-yellow100" : ""} fixed w-full top-0 left-0 z-20`}>
-            <div className="container mx-auto flex items-center justify-between py-4 px-2">
-                {/*左上のアイコン*/}
+        <div className="w-full top-0 left-0 z-0">
+            <div className="container mx-auto bg-yellow100 flex items-center justify-between py-4 px-2">
                 <div className="flex items-center gap-2">
-                    <div className="rounded-full w-8 h-8 bg-ghostWhite flex items-center justify-center text-black">
-                        R
-                    </div>
+                    {/*左上のアイコン*/}
+                    <PiCookingPotFill className="rounded-full w-10 h-10 bg-white flex items-center justify-center text-black" />
                     <p className="text-xl">
                         <span className="opacity-80">Recipe Generation by GPT-3.5</span>
                     </p>

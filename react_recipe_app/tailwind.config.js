@@ -6,7 +6,8 @@ module.exports = {
     extend: {
       colors: {
         ghostWhite: "#f8f8ff",
-        yellow100:"#fef9c3"
+        yellow100:"#fef9c3",
+        amber300:"#fcd34d"
       }
     },
   },

@@ -44,7 +44,7 @@ const Home = () =>{
     };
     
     return(
-        <div>
+        <div className="mx-50 my-20">
             <div className="section flex justify-center items-center" id="home">
                 <div className="grid md:grid-cols-2 place-items-center gap-8">
                     <div className="w-[300px] h-[300px] sm:w-[350px] sm:h-[350px] 
@@ -74,9 +74,9 @@ const Home = () =>{
                     </motion.div>
                 </div>
             </div>
-            <div id="result">
+            <div id="result" className="mx-50">
                 <div className="text-black sm:text-[1.5rem] font-bond mb-4">処理結果</div>
-                <textarea name="reply" class="h-48 w-full p-2 border" 
+                <textarea name="reply" className="h-48 w-4/5 mx-auto p-2 border" 
                     placeholder='Loading...' value={textOfRecipe} onChange={e => setTextOfRecipe(e.target.value)} />
             </div>
         </div>
