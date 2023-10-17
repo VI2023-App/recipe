@@ -1,4 +1,7 @@
 /ObjectDetection/data
+/ObjectDetection/runs
+/ObjectDetection/ultralytics
+/ObjectDetection/*.pt
 /flask_backend/static
 /flask_backend/templates
 /flask_backend/settings.py
