@@ -66,5 +66,5 @@ https://www.kaggle.com/datasets/kritikseth/fruit-and-vegetable-image-recognition
 <pre><div class="buttons"><button class="fa fa-copy clip-button" title="Copy to clipboard" aria-label="Copy to clipboard"><i class="tooltiptext"></i></button></div><code class="language-bash hljs">cd react_recipe_app
 npm run build
 cd ../flask_backend
-python main.py
+python web_app.py
 </code></pre>
