@@ -1,0 +1,21 @@
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: D:/GitHub/recipe/ObjectDetection  # dataset root dir
+train: data/images/train  # train images (relative to 'path') 3942 images
+val: data/images/val  # val images (relative to 'path') 650 images
+
+# Classes
+names:
+  0: banana_wb
+  1: banana_wob
+  2: blackberries
+  3: raspberry
+  4: lemon_wb
+  5: lemon_wob
+  6: grapes_wb
+  7: grapes_wob
+  8: tomato_wb
+  9: tomato_wob
+  10: apple_wb
+  11: apple_wob
+  12: chilli_wb
+  13: chilli_wob

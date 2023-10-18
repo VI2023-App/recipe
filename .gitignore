@@ -1,8 +1,12 @@
 /ObjectDetection/data
+/ObjectDetection/runs
+/ObjectDetection/ultralytics
+/ObjectDetection/*.pt
 /flask_backend/static
 /flask_backend/templates
 /flask_backend/settings.py
 /test_image
 flask_backend/yolov8n.pt
 flask_backend/__pycache__
+flask_backend/runs
 .vscode/launch.json

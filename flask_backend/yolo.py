@@ -6,7 +6,7 @@ from ultralytics import YOLO
 
 
 def classification(image):
-    model = YOLO("yolov8n.pt")
+    model = YOLO("best.pt")
     results = model.predict(source=image, save=True)
     
     detected_obj_names = []
