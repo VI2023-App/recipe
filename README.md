@@ -2,6 +2,7 @@
 
 <h2>データセット</h2>
 https://www.kaggle.com/datasets/kvnpatel/fruits-vegetable-detection-for-yolov4 <br>
+https://www.kaggle.com/datasets/ayyuce/vegetables
 上記リンクからダウンロード後，ObjectDetection/dataフォルダに展開する．
 
 <h2>対象となる野菜・果物</h2>
