@@ -1,4 +1,5 @@
 /ObjectDetection/data
+/ObjectDetection/data_fruit
 /ObjectDetection/runs
 /ObjectDetection/ultralytics
 /ObjectDetection/*.pt
@@ -10,3 +11,4 @@ flask_backend/yolov8n.pt
 flask_backend/__pycache__
 flask_backend/runs
 .vscode/launch.json
+.idea
