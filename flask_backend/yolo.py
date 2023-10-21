@@ -2,12 +2,16 @@ import tkinter as tk
 from tkinter import filedialog
 from PIL import Image, ImageTk
 import openai
+import io
 from ultralytics import YOLO
 
 
 def classification(image):
     model = YOLO("best_vandf.pt")
     results = model.predict(source=image, save=True)
+    
+    # Resultsオブジェクトのplotメソッドでndarrayを取得
+    results_plotted = results[0].plot()
     
     detected_obj_names = []
     for r in results:
@@ -19,4 +23,4 @@ def classification(image):
             detected_obj_names.append(detected_obj_name)
     
     detected_obj_names_string = ', '.join(detected_obj_names)
-    return detected_obj_names_string
+    return detected_obj_names_string, results_plotted

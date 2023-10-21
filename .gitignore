@@ -10,5 +10,6 @@
 flask_backend/yolov8n.pt
 flask_backend/__pycache__
 flask_backend/runs
+react_recipe_app/static/image/*
 .vscode/launch.json
 .idea
