@@ -12,7 +12,10 @@ const Home = (props) =>{
 
     return(
         <div className="container mx-auto my-5">
-            <div id="home" className="section bg-desertStorm mx-auto my-5 px-10 py-5 rounded-[12px] flex justify-center items-center">
+            <div id="home" 
+                className="section bg-desertStorm 
+                            mx-auto my-5 px-10 py-5 rounded-[12px] 
+                            flex justify-center items-center">
                 <div className="grid grid-cols-2 place-items-center gap-32">
                     <div className="w-[500px] h-[500px] overflow-hidden bg-white 
                     border-[5px] border-solid rounded-[12px] border-pixieGreen_h">
@@ -25,15 +28,16 @@ const Home = (props) =>{
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5 }}
                     >
-                        <div className="text-black sm:text-[1rem] text-left font-bold">
-                            食材の写真をアップロードしてください
-                        </div>
-                        <div>
-                            <form className='my-6'>
+                        <div className='my-6'>
+                            <div className="text-black text-[1.5rem] text-left font-bold">
+                                食材の写真をアップロードしてください
+                            </div>
+                            <form className='my-2'>
                                 <button 
                                     type="button"
                                     onClick={fileUpload} 
-                                    className="bg-flamePea text-white border-0 p-2 rounded-md">
+                                    className="bg-flamePea text-white border-0 mx-2 p-2 rounded-md
+                                                hover:bg-flamePea_h hover:text-white">
                                         ファイル選択
                                 </button>
                                 <input 
@@ -45,16 +49,33 @@ const Home = (props) =>{
                                 />
                                 <button 
                                     type="submit" onClick={(e) => props.handleUpload(e)} 
-                                    className="bg-pixieGreen text-white border-0 p-2 rounded-md hover:bg-pixieGreen_h hover:text-white">
+                                    className="bg-sushi text-white border-0 mx-2 p-2 rounded-md
+                                                hover:bg-sushi_h hover:text-white">
                                         アップロード
                                 </button>
                             </form>
                         </div>
-                        <div className="text-black sm:text-[1rem] text-left font-bold">
-                            生成結果
+                        <div className='my-6'>
+                            <div className="text-black text-[1.5rem] text-left font-bold">
+                                生成結果
+                            </div>
+                            <textarea
+                                name="reply" 
+                                readOnly
+                                className="container bg-pixieGreen
+                                            mx-auto h-80 w-[30rem] my-2 p-2 
+                                            border-[5px] border-pixieGreen_h" 
+                                placeholder='Loading...' 
+                                value={props.textOfRecipe} 
+                                onChange={e => props.setTextOfRecipe(e.target.value)} />
+                            <button 
+                                type="button"
+                                // onClick={} 
+                                className="bg-sushi text-white border-0 mx-2 p-2 rounded-md
+                                        hover:bg-sushi_h hover:text-white">
+                                再生成        
+                            </button>
                         </div>
-                        <textarea name="reply" className="h-80 w-[30rem] mx-auto my-6 p-2 border" 
-                        placeholder='Loading...' value={props.textOfRecipe} onChange={e => props.setTextOfRecipe(e.target.value)} />
                     </motion.div>
                 </div>
             </div>
