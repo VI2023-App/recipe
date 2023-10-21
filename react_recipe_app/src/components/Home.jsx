@@ -21,7 +21,7 @@ const Home = (props) =>{
                     border-[5px] border-solid rounded-[12px] border-pixieGreen_h">
                             <img src={props.fileUrl} alt="img_recipe"
                                 onChange={e => props.setFileUrl(e.target.value)}
-                                className="w-full h-full object-cover" />
+                                className="w-full h-full object-contain" />
                     </div>
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
