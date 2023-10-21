@@ -15,7 +15,7 @@ const Header = () =>{
                 <div className="flex items-center gap-2">
                     {/*左上のアイコン*/}
                     <PiCookingPotFill className="rounded-full w-10 h-10 bg-white flex items-center justify-center text-black" />
-                    <p className="text-xl">
+                    <p className="text-xl font-black">
                         <span className="opacity-80">Recipe Generation by GPT-3.5</span>
                     </p>
                 </div>

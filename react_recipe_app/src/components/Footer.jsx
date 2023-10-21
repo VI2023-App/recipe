@@ -1,0 +1,13 @@
+import React from 'react';
+
+const Footer = () =>{
+    return(
+        <div className="container w-full h-[2.5rem] mx-auto my-5 bg-desertStorm">
+            <div className="text-black sm:text-[1rem] text-center">
+                Copyright © Recipe 2023.
+            </div>
+        </div>
+    )
+}
+
+export default Footer;
