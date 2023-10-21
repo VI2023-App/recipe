@@ -30,8 +30,8 @@ def upload():
             result, results_plotted = classification(img)
             prefix_text = make_prefix(result)
             print(prefix_text)
-            # reply = try_gpt_chat(prefix_text, result)
-            # print(reply)
+            reply = try_gpt_chat(prefix_text, result)
+            print(reply)
             
             # ndarrayをPillowのImageに変換 BGRからRGBへ変換
             results_plotted_pl = Image.fromarray(results_plotted[:, :, ::-1])
@@ -40,7 +40,8 @@ def upload():
             # バイトデータをBase64エンコード
             image_data_base64 = base64.b64encode(image_data).decode('utf-8')
             
-            return jsonify({'text': prefix_text, 'image': image_data_base64})
+            # return jsonify({'text': prefix_text, 'image': image_data_base64})
+            return jsonify({'text': reply, 'image': image_data_base64})
         else:
             return jsonify({'message':'no image'}), 400
     except Exception as e:
