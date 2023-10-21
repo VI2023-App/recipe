@@ -14,6 +14,13 @@ https://www.kaggle.com/datasets/ayyuce/vegetables
 <li>lemon</li>
 <li>raspberry</li>
 <li>tomato</li>
+<li>lettuce</li>
+<li>potato</li>
+<li>carrot</li>
+<li>onion</li>
+<li>garlic</li>
+<li>leek</li>
+<li>broccoli</li>
 
 
 <h2>技術スタック</h2>
