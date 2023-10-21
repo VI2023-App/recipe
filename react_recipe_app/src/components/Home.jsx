@@ -1,6 +1,5 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import { motion } from "framer-motion";
-import img_recipe from "../assets/img_recipe.png"
 
 const Home = (props) =>{
     const inputRef = useRef(null);
@@ -17,7 +16,7 @@ const Home = (props) =>{
                             mx-auto my-5 px-10 py-5 rounded-[12px] 
                             flex justify-center items-center">
                 <div className="grid grid-cols-2 place-items-center gap-32">
-                    <div className="w-[500px] h-[500px] overflow-hidden bg-white 
+                    <div className="w-[500px] h-[500px] overflow-hidden bg-pixieGreen 
                     border-[5px] border-solid rounded-[12px] border-pixieGreen_h">
                             <img src={props.fileUrl} alt="img_recipe"
                                 onChange={e => props.setFileUrl(e.target.value)}
@@ -30,7 +29,7 @@ const Home = (props) =>{
                     >
                         <div className='my-6'>
                             <div className="text-black text-[1.5rem] text-left font-bold">
-                                食材の写真をアップロードしてください
+                                食材の写真
                             </div>
                             <form className='my-2'>
                                 <button 

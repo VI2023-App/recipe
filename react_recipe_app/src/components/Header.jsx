@@ -1,14 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { PiCookingPotFill } from "react-icons/pi"
 
 const Header = () =>{
-    const [toggle, setToggle] = useState(false);
-    const [isTop, setIsTop] = useState(false);
-    useEffect(() => {
-        window.addEventListener("scroll", () => {
-            setIsTop(window.scrollY > 20);
-        });
-    }, []);
     return(
         <div className="container w-full md:w-auto mx-auto mb-5 bg-dandelion">
             <div className="container px-5 py-5 flex items-center justify-between">
