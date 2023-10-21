@@ -33,8 +33,8 @@ def upload():
             # reply = try_gpt_chat(prefix_text, result)
             # print(reply)
             
-            # ndarrayをPillowのImageに変換
-            results_plotted_pl = Image.fromarray(results_plotted)
+            # ndarrayをPillowのImageに変換 BGRからRGBへ変換
+            results_plotted_pl = Image.fromarray(results_plotted[:, :, ::-1])
             # BytesIOからデータを取得
             image_data = serve_pil_image(results_plotted_pl).getvalue()
             # バイトデータをBase64エンコード
