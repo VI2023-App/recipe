@@ -43,6 +43,9 @@ https://www.kaggle.com/datasets/ayyuce/vegetables <br>
 <h2>画面構成</h2>
 <img src="images/demo1.png">
 
+<h2>開発時期</h2>
+<p>2023年9月末~</p>
+
 <h2>ビルドと立ち上げ</h2>
 <blockquote>
 <p>【参考】</p>
