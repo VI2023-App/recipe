@@ -1,8 +1,18 @@
-# recipe
+<h1>recipe</h1>
+<img src="images/Recipe_header.png">
+
+<h2>食材の画像からGPT-3.5がレシピを提案</h2>
+<ul>
+<li>
+<p>毎日の献立を考えるのが大変</p>
+</li>
+<li>
+<p>冷蔵庫にある食材を消費したい</p>
+<p>そんな悩みを着想点としたWebアプリです．</p>
 
 <h2>データセット</h2>
 https://www.kaggle.com/datasets/kvnpatel/fruits-vegetable-detection-for-yolov4 <br>
-https://www.kaggle.com/datasets/ayyuce/vegetables
+https://www.kaggle.com/datasets/ayyuce/vegetables <br>
 上記リンクからダウンロード後，ObjectDetection/dataフォルダに展開する．
 
 <h2>対象となる野菜・果物</h2>
@@ -22,19 +32,18 @@ https://www.kaggle.com/datasets/ayyuce/vegetables
 <li>leek</li>
 <li>broccoli</li>
 
-
 <h2>技術スタック</h2>
-<li>Python</li>
-<li>Pytorch</li>
-<li>Anaconda</li>
-<li>Matplotlib</li>
-<li>Numpy</li>
 <li>React</li>
 <li>Tailwind</li>
 <li>Flask</li>
+<li>Open AI</li>
+<li>Python</li>
+<li>ultralytics YOLOv8</li>
+
+<h2>画面構成</h2>
+<img src="images/demo1.png">
 
 <h2>ビルドと立ち上げ</h2>
-
 <blockquote>
 <p>【参考】</p>
 <ul>
