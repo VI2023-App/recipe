@@ -57,6 +57,7 @@ https://www.kaggle.com/datasets/ayyuce/vegetables <br>
 </blockquote>
 
 <pre><div class="buttons"><button class="fa fa-copy clip-button" title="Copy to clipboard" aria-label="Copy to clipboard"><i class="tooltiptext"></i></button></div><code class="language-bash hljs">cd react_recipe_app
+npm install
 npm run build
 cd ../flask_backend
 python web_app.py
